@@ -1,19 +1,19 @@
-/* Body styling */
+/* Apply font and background */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f6f8;
 }
 
-/* Header */
+/* Header styling */
 header {
-    background-color: #4CAF50;
+    background: linear-gradient(to right, #4CAF50, #2e8b57);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
-/* Navigation bar */
+/* Navigation bar using Flexbox */
 nav {
     display: flex;
     justify-content: center;
@@ -24,18 +24,34 @@ nav a {
     color: white;
     padding: 14px 20px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: #575757;
+    background-color: #4CAF50;
+    border-radius: 5px;
 }
 
-/* Sections */
+/* Section styling (card style) */
 section {
     background: white;
-    margin: 20px;
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
+
+    /* Shadow effect */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Headings */
+h2 {
+    color: #2e8b57;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
 }
 
 /* Footer */
@@ -43,5 +59,6 @@ footer {
     text-align: center;
     background-color: #222;
     color: white;
-    padding: 10px;
+    padding: 15px;
+    margin-top: 20px;
 }
